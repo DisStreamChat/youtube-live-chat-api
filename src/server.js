@@ -14,7 +14,6 @@ const app = express();
 const server = http.Server(app);
 const io = socketIO(server);
 
-app.use(morgan('tiny'));
 app.use(cors());
 
 app.get('/', (req, res) => {
@@ -116,5 +115,5 @@ app.use(errorHandler);
 
 const port = process.env.PORT || 5000;
 server.listen(port, () => {
-  console.log(`Listening at http://localhost:${port}`);
+  console.log(`Listening at to ${port}`);
 });
