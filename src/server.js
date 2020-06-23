@@ -2,20 +2,13 @@ const http = require('http');
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
-const monk = require('monk');
+
 const socketIO = require('socket.io');
 
 const {
   getAllEvents,
   listenMessages,
 } = require('./youtubeMessages');
-
-const {
-  MONGO_URI,
-} = process.env;
-
-const db = monk(MONGO_URI);
-const messages = db.get('messages');
 
 const app = express();
 const server = http.Server(app);
