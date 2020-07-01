@@ -35,9 +35,14 @@ async function getEvents(eventType) {
 		eventType,
 	});
 
-	const url = `https://www.googleapis.com/youtube/v3/search?${params}`;
-	const { data } = await axios.get(url);
-	return data;
+    const url = `https://www.googleapis.com/youtube/v3/search?${params}`;
+    try{
+        const { data } = await axios.get(url);
+        return data;
+    }catch(err){
+        console.log(err)
+        return {}
+    }
 }
 
 async function getAllEvents() {
