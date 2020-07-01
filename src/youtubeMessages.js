@@ -40,7 +40,7 @@ async function getEvents(eventType) {
         const { data } = await axios.get(url);
         return data;
     }catch(err){
-        console.log(err)
+        console.log(err.message)
         return {}
     }
 }
