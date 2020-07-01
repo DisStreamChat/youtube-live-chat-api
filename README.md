@@ -38,7 +38,6 @@ Variables needed to listen for messages:
 
 | Variable | Description|
 | :--- | :--- |
-| MONGO_URI | Mongo DB URL, used to store chat messages |
 | GOOGLE_API_KEY | Google API Key, used to retrieve messages |
 | YOUTUBE_CHANNEL_ID | The channel to listen for messages |
 
