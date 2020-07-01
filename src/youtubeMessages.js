@@ -4,9 +4,9 @@ const axios = require("axios");
 require("dotenv").config();
 
 const {
-	GOOGLE_REFRESH_TOKEN: refresh_token, // some how we will have to pass this through
-	GOOGLE_CLIENT_ID: client_id,
+    GOOGLE_CLIENT_ID: client_id,
 	GOOGLE_CLIENT_SECRET: client_secret,
+	GOOGLE_REFRESH_TOKEN: refresh_token, // some how we will have to pass this through
 	YOUTUBE_CHANNEL_ID: channelId, // some how we will have to pass this through
 	GOOGLE_API_KEY: key,
 } = process.env;
